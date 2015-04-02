@@ -1,16 +1,4 @@
-<h2 class="section-title"><%= @labels['sponsors'] %></h2>
-<ul class="sponsors-list">
+<h2 class="section-title"><%= @labels['about'] %></h2>
+<p itemprop="description">O "Front-End Meet-Up Group" é um projeto que nasceu da necessidade de unir os desenvolvedores Front-End de São Paulo, e então tornou-se uma idéia coletiva, para que o acesso à informação seja feito em qualquer lugar que haja interesse do aprendizado.</p>
 
-<% for sponsor in @sponsors: %>
-  <li class="sponsor-item" itemscope itemtype="http://schema.org/Organization">
-    <a href="<%= sponsor.url %>" class="sponsor-logo sponsor--link" itemprop="url">
-      <img src="<%= sponsor.logo %>" alt="<%= sponsor.name %>" class="photo" itemprop="image">
-    </a>
-  </li>
-<% end %>
-  <li class="sponsor-item">
-    <a class="sponsor-logo sponsor--link sponsor-call" href="#">
-    	<img src="<%= @getTheme() %>/img/your-logo.jpg" alt="your logo" class="photo">
-    </a>
-  </li>
-</ul>
+<p>Esta será a primeira edição do FEMUG-DF. Trata-se de um evento para pessoas interessadas em aprender, evoluir e dividir conhecimentos relacionados ao front-end e tecnologias periféricas relacionadas.</p>
